@@ -24,7 +24,7 @@ docker run -d --name keycloak1 --restart=always \
     -e JGROUPS_DISCOVERY_EXTERNAL_IP=172.31.72.101 \
     -e PROXY_ADDRESS_FORWARDING=true \
     -e KEYCLOAK_FRONTEND_URL=https://your-domain/auth \
-    vigoz/keycloak-ha:10.0.1
+    vigoz/keycloak-ha:10.0.2
 ```
 
 ### Run keycloak2
@@ -48,7 +48,7 @@ docker run -d --name keycloak2 --restart=always \
     -e JGROUPS_DISCOVERY_EXTERNAL_IP=172.31.72.102 \
     -e PROXY_ADDRESS_FORWARDING=true \
     -e KEYCLOAK_FRONTEND_URL=https://your-domain/auth \
-    vigoz/keycloak-ha:10.0.1
+    vigoz/keycloak-ha:10.0.2
 ```
 
 ## Use PostgreSQL
@@ -74,7 +74,7 @@ docker run -d --name keycloak1 --restart=always \
     -e JGROUPS_DISCOVERY_EXTERNAL_IP=172.31.72.101 \
     -e PROXY_ADDRESS_FORWARDING=true \
     -e KEYCLOAK_FRONTEND_URL=https://your-domain/auth \
-    vigoz/keycloak-ha:10.0.1-postgres
+    vigoz/keycloak-ha:10.0.2-postgres
 ```
 
 ### Run keycloak2
@@ -99,5 +99,5 @@ docker run -d --name keycloak2 --restart=always \
     -e JGROUPS_DISCOVERY_EXTERNAL_IP=172.31.72.102 \
     -e PROXY_ADDRESS_FORWARDING=true \
     -e KEYCLOAK_FRONTEND_URL=https://your-domain/auth \
-    vigoz/keycloak:10.0.1-postgres
+    vigoz/keycloak:10.0.2-postgres
 ```
